@@ -42,7 +42,16 @@ body{
   justify-content: space-between;
   width: 40%;
   align-items: center;
+}
+
+.nav a{
+  text-decoration: none;
   color: var(--secondary-color);
+  transition: all .5s;
+}
+
+.nav a:hover{
+  color:var(--dark-color)
 }
 
 .header h1{
