@@ -1,0 +1,124 @@
+
+:root{
+  --main-color : #FFFFFF;
+  --secondary-color : #6C63FF;
+  --tertiary-color : #6159E5;
+  --dark-color : #3F3D56;
+  --gray-color : #CACACA;
+  --focus-color : #FF6584;
+  --bg-color : linear-gradient(90deg, rgba(131,58,180,0.5942752100840336) 0%, rgba(253,29,29,0.49343487394957986) 50%, rgba(252,176,69,1) 100%);
+}
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: var(--main-color) ;
+  display: flex;
+  justify-content: center;
+}
+
+
+.content {
+  margin: 30px 0;
+  width: 70vw;
+  min-width: 30vw;
+  max-height: 70vh;
+  padding: 20px 50px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.144);
+  border : solid 1px var(--secondary-color);
+  box-shadow: 0 0 150px var(--dark-color);
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-right:  50px;
+  margin-bottom: 50px;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  align-items: center;
+  color: var(--secondary-color);
+}
+
+.header h1{
+  margin: none;
+  padding: none;
+  line-height: 0;
+  color: var(--secondary-color);
+  box-shadow: 0 0 14 black;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.description{
+
+  display: flex;
+  height: 50vh;
+}
+
+.info {
+  font-size: 2em;
+  line-height: 2em;
+  letter-spacing: -1.6px;
+}
+
+.description .info button{
+  margin-top: 40px;
+  font-size: 1em;
+
+}
+
+.content p {
+  font-size: 1.5em;
+}
+
+.content img{
+  width: 50%;
+  
+}
+
+.linkedin{
+  color: var(--main-color);
+  background: var(--main-color);
+  text-decoration: none;
+  color: inherit;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: solid 1px var(--tertiary-color);
+
+}
+.linkedin img{
+  width: 24px;
+  margin-top: 2px;
+}
+
+
+.content button{
+  width: 100%;
+  font-size: 1.6em;
+  height: 50px;
+  background: linear-gradient(90deg ,var(--tertiary-color) 0%, var(--focus-color) 50%);
+  border: solid 1px var(--dark-color);
+  border-radius: 35px;
+  transition: all .3s;
+}
+
+
+.content button:hover{
+  height: 55px;
+}
+.content button:active{
+  color: white;
+    border: solid 1px var(--main-color);
+
+
+}
